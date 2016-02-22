@@ -22,7 +22,7 @@ return [
 
     // Branding
     'brand-primary'          => '#2c3e50',
-    'brand-success'          => '#18bc9c',
+    'brand-success'          => '#24ce7b',
     'brand-info'             => '#38b5e6',
     'brand-warning'          => '#f69630',
     'brand-danger'           => '#f6303e',

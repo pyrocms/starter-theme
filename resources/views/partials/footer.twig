@@ -6,7 +6,13 @@
                 <div class="footer-col col-md-4">
                     <h3>PyroCMS</h3>
 
-                    {{ menu('footer').listClass('list list-unstyled')|raw }}
+                    {#{{ menu('footer').listClass('list list-unstyled')|raw }}#}
+
+                    {% for link in links('footer').get() %}
+                        <p>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </p>
+                    {% endfor %}
 
                 </div>
                 <div class="footer-col col-md-4">
