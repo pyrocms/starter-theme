@@ -6750,6 +6750,15 @@ input:focus {
 .has-success .input-group-addon {
   border-color: #18bc9c;
 }
+
+.has-danger .form-control,
+.danger .form-control:focus {
+  border: 2px solid #e74c3c;
+}
+.danger .input-group-addon {
+  border-color: #e74c3c;
+}
+
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
