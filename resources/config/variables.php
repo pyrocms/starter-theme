@@ -189,7 +189,7 @@ return [
     'dropdown-link-disabled-color' => '#818a91',
 
     'dropdown-header-color' => '#818a91',
-    /**
+    /*
      * // Z-index master list
      * //
      * // Warning: Avoid customizing these values. They're used for a bird's eye view

@@ -8,7 +8,6 @@ use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Pyrocms\StarterTheme
  */
 class StarterThemeServiceProvider extends AddonServiceProvider
 {
@@ -20,7 +19,7 @@ class StarterThemeServiceProvider extends AddonServiceProvider
      */
     protected $overrides = [
         'streams::errors/404' => 'theme::errors/404',
-        'streams::errors/500' => 'theme::errors/500'
+        'streams::errors/500' => 'theme::errors/500',
     ];
 
 }
