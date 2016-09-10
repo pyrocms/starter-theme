@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'البداية',
-    'name'        => 'سمة البداية',
-    'description' => 'سمة البداية تعتمد على سمة مجانية على http://startbootstrap.com'
+    'title'       => 'Starter',
+    'name'        => 'Starter Theme',
+    'description' => 'A starter theme based on the Freelance Theme from http://startbootstrap.com'
 ];
