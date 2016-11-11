@@ -19,6 +19,17 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    {% if auth_check() %}
+                        <a href="{{ url_route('anomaly.module.users::logout') }}">Logout</a>
+                    {% else %}
+                        <a href="{{ url_route('anomaly.module.users::login') }}">Login</a>
+                    {% endif %}
+                </li>
+            </ul>
+
             {{ structure()
             .linkAttributesDropdown({'data-toggle': 'dropdown'})
             .listClass('nav navbar-nav navbar-right')
@@ -26,6 +37,7 @@
             .render()|raw }}
         </div>
         <!-- /.navbar-collapse -->
+
     </div>
     <!-- /.container-fluid -->
 </nav>

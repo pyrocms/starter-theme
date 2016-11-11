@@ -17,6 +17,10 @@
         {% include "theme::partials/messages" %}
 
         {% block content %}{% endblock %}
+
+        {% if (request_path() == '/') %}
+            <hr> {% include "theme::partials/posts" %}
+        {% endif %}
     </div>
 </div>
 
