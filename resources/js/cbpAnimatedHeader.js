@@ -8,7 +8,7 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
-var cbpAnimatedHeader = (function() {
++(function(document, window, undefined) {
 
 	var docElem = document.documentElement,
 		header = document.querySelector( '.navbar-fixed-top' ),
@@ -41,4 +41,4 @@ var cbpAnimatedHeader = (function() {
 
 	init();
 
-})();
+})(document, window);
