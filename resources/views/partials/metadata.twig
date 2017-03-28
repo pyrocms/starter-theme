@@ -8,6 +8,14 @@
     {{ config_get("streams::distribution.name") }}  &#8250; {{ trans(template.meta_title) }}
 </title>
 
+{% block opengraph %}
+	<meta property="og:site_name"   content="{{ config_get("streams::distribution.name") }}"/>
+	<meta property="og:type"        content="website"/>
+	<meta property="og:title"       content="{{ template.meta_title }}"/>
+	<meta property="og:description" content="{{ template.meta_description }}">
+	<meta property="og:url"         content="{{ app.request.getUri }}"/>
+{% endblock %}
+
 <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
 {{ asset_add("theme.css", "theme::css/bootstrap.css") }}
 
