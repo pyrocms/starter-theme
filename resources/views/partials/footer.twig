@@ -6,9 +6,9 @@
                 <div class="footer-col col-md-4">
                     <h3>PyroCMS</h3>
 
-                    {#{{ menu('footer').listClass('list list-unstyled')|raw }}#}
+                    {#{{ menu('footer').listClass('list list-unstyled').cache({'namespace': 'user'}).render()|raw }}#}
 
-                    {% for link in links('footer').get() %}
+                    {% for link in links('footer').cache({'namespace': 'user'}).user().get() %}
                         <p>
                             <a href="{{ link.url }}">{{ link.title }}</a>
                         </p>
@@ -34,7 +34,7 @@
                     <h3>About Starter Theme</h3>
 
                     <p>The Starter theme is based on the Freelance theme. A free to use, open source Bootstrap theme
-                        created by <a
+                       created by <a
                                 href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                 </div>
             </div>
