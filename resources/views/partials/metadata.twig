@@ -9,11 +9,13 @@
 </title>
 
 {% block opengraph %}
-    <meta property="og:site_name" content="{{ config_get("streams::distribution.name") }}"/>
+    <meta property="og:site_name"
+          content="{{ setting_value('streams::name', config_get('streams::distribution.name')) }}"/>
+    {#<meta property="og:image" content="{{ image_url('qcr.theme.qcr::img/og.png') }}"/>#}
+    <meta property="og:description" content="{{ trans(template.meta_description) }}"/>
+    <meta property="og:title" content="{{ trans(template.meta_title) }}"/>
+    <meta property="og:url" content="{{ url_current() }}"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="{{ template.meta_title }}"/>
-    <meta property="og:description" content="{{ template.meta_description }}">
-    <meta property="og:url" content="{{ app.request.getUri }}"/>
 {% endblock %}
 
 <!-- Favicons -->
