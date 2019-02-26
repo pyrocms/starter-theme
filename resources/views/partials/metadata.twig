@@ -11,7 +11,7 @@
 {% block opengraph %}
     <meta property="og:site_name"
           content="{{ setting_value('streams::name', config_get('streams::distribution.name')) }}"/>
-    {#<meta property="og:image" content="{{ image_url('qcr.theme.qcr::img/og.png') }}"/>#}
+    {#<meta property="og:image" content="{{ img('qcr.theme.qcr::img/og.png').url }}"/>#}
     <meta property="og:description" content="{{ trans(template.meta_description) }}"/>
     <meta property="og:title" content="{{ trans(template.meta_title) }}"/>
     <meta property="og:url" content="{{ url_current() }}"/>
