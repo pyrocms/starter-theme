@@ -26,12 +26,13 @@
 {{ asset_add("theme.css", "theme::css/bootstrap.css") }}
 
 <!-- Custom CSS -->
-{{ asset_add("theme.css", "theme::less/freelancer.less") }}
+{{ asset_add("theme.css", "theme::css/freelancer.css") }}
 
 <!-- Custom Fonts -->
-{{ asset_add("theme.css", "theme::font-awesome/css/font-awesome.css", ["parse"]) }}
+{# {{ asset_add("theme.css", "theme::font-awesome/css/font-awesome.css", ["parse"]) }} #}
 <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 {{ asset_style("theme.css") }}
 
